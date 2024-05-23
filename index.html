@@ -1,0 +1,12 @@
+<button id="ar-button">View in AR</button>
+<model-viewer id="shoe-model" src="5_21_2024.glb" ar ar-modes="webxr scene-viewer" hidden></model-viewer>
+
+<script>
+  const arButton = document.getElementById('ar-button');
+  const shoeModel = document.getElementById('shoe-model');
+
+  arButton.addEventListener('click', () => {
+    shoeModel.removeAttribute('hidden');
+  });
+</script>
+
